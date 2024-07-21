@@ -1,0 +1,41 @@
+//Page Transition animation
+
+.page-enter-active,
+.page-leave-active {
+  opacity: 0.9;
+  transition: all 0.5s ease;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.menu-enter-active {
+  transform: all 10s ease;
+}
+
+.menu-enter-to,
+.menu-leave-to {
+  transform: translateY(-100%) !important;
+}

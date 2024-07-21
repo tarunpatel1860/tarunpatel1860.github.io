@@ -1,0 +1,64 @@
+.color-primary {
+  color: map-get($color-map, primary);
+}
+
+.color-secondary {
+  color: map-get($color-map, secondary);
+}
+
+.bg-primary {
+  background-color: map-get($color-map, primary);
+}
+
+.bc-primary {
+  border-color: map-get($color-map, primary);
+}
+
+.border-primary {
+  border: 1px solid map-get($color-map, primary);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-inline-flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 2rem;
+}

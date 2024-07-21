@@ -1,0 +1,45 @@
+@each $i in $mar-pad {
+  .mt-#{$i} {
+    margin-top: #{$i/3}rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i/3}rem;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i/3}rem;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i/3}rem;
+  }
+  .mx-#{$i} {
+    @extend .mr-#{$i}, .ml-#{$i};
+  }
+  .my-#{$i} {
+    @extend .mb-#{$i}, .mt-#{$i};
+  }
+  .m-#{$i} {
+    @extend .mx-#{$i}, .my-#{$i};
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i/3}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i/3}rem;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i/3}rem;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i/3}rem;
+  }
+  .px-#{$i} {
+    @extend .pr-#{$i}, .pl-#{$i};
+  }
+  .py-#{$i} {
+    @extend .pb-#{$i}, .pt-#{$i};
+  }
+  .p-#{$i} {
+    @extend .px-#{$i}, .py-#{$i};
+  }
+}

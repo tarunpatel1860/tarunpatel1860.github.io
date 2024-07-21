@@ -1,0 +1,27 @@
+.error {
+  height: 100%;
+  width: 100%;
+  padding: 5.5rem 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    @extend .color-primary;
+    font-size: 8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.error ~ .swipe {
+  display: none;
+}
+
+.error ~ .scroll-down {
+  display: none;
+}

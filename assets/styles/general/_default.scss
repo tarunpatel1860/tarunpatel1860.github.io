@@ -1,0 +1,83 @@
+html {
+  font-family: 'Poppins', 'Arial', 'Helvetica', 'Trebuchet MS', 'Verdana';
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  color: map-get($color-map, secondary);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+::selection {
+  background-color: map-get($color-map, primary);
+}
+
+#__nuxt {
+  height: 100%;
+  width: 100%;
+}
+
+#__layout {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  all: unset;
+  color: map-get($color-map, secondary);
+
+  &:hover,
+  &:active {
+    all: unset;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 6rem 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-wrapper {
+    padding: 6rem 8%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .page-wrapper {
+    padding: 4rem 2%;
+  }
+}

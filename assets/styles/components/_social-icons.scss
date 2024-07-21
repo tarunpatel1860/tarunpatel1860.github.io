@@ -1,0 +1,35 @@
+.social-icons {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  gap: 2rem;
+  font-size: 1.5rem;
+  transition: all 1s ease-in;
+
+  &.contact-page {
+    bottom: var(--social-bottom);
+    right: var(--social-right);
+    transform: var(--social-transform);
+  }
+
+  li {
+    a {
+      &:hover {
+        color: map-get($color-map, primary);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .social-icons {
+    display: none;
+    &.menu-social {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      right: unset;
+      transform: translateX(-50%);
+    }
+  }
+}

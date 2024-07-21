@@ -1,0 +1,75 @@
+.home {
+  @extend .page-wrapper;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__name {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    &__head {
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
+
+    &__action {
+      user-select: none;
+      display: flex;
+      button {
+        i {
+          font-size: 1.7rem;
+        }
+      }
+      button:hover {
+        border-color: map-get($color-map, secondary);
+        i {
+          color: map-get($color-map, primary);
+        }
+      }
+    }
+  }
+
+  &__image {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    user-select: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    &__content {
+      &__name {
+        font-size: 1.5rem;
+      }
+
+      &__head {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      &__action {
+        button {
+          font-size: 0.8rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

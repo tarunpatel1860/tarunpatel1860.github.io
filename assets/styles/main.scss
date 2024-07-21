@@ -1,0 +1,17 @@
+@import 'general/variables';
+@import 'general/utlities';
+@import 'general/default';
+@import 'general/mixins';
+@import 'general/animations';
+
+@import 'layouts/default';
+
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/about';
+@import 'pages/projects';
+@import 'pages/projects-v1';
+@import 'pages/error';
+
+@import 'components/navbar';
+@import 'components/social-icons';
