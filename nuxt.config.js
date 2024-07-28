@@ -1,12 +1,11 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   router: {
-    base: '/tarunpatel1860.github.io'
+    base: '/tarunpatel1860.github.io/'
   },
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     title: 'Tarun Patel',
     htmlAttrs: {
@@ -36,27 +35,26 @@ export default {
     ],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS
   css: ['@/assets/styles/main.scss', '@/assets/icons/style.css'],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins
   plugins: [
     { src: '~/plugins/vue-touch', ssr: false },
     { src: '~/plugins/google-analytics', ssr: false },
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  // Build Modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules
   modules: [],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  // Build Configuration
   build: {},
 }
