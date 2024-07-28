@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   router: {
-    base: '/tarunpatel1860.github.io/'
+    base: '/tarunpatel1860.github.io/',
   },
 
   // Global page headers
