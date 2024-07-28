@@ -2,6 +2,14 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  generate: {
+    dir: 'docs', // GitHub Pages serves from the docs directory
+  },
+
+  router: {
+    base: '/tarunpatel1860.github.io/',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Tarun Patel',

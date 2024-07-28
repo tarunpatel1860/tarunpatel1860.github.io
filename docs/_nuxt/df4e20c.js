@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{229:function(t,n,e){"use strict";e.r(n);var r={mixins:[e(115).a],data:function(){return{title:"Project Archives - tarunpatel1860"}}},c=e(16),component=Object(c.a)(r,(function(){var t=this.$createElement;return(this._self._c||t)("div")}),[],!1,null,null,null);n.default=component.exports}}]);
